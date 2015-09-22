@@ -1,4 +1,4 @@
-from .menu import MenuItemRegistry
+from .registry import MenuItemRegistry
 
 
 def initialize(supervisor):
