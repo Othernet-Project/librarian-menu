@@ -10,7 +10,7 @@ class MenuItemRegistry(object):
     def __init__(self):
         self.registered = []
         self.items = []
-        self.groups = []
+        self.groups = dict()
         bottle.BaseTemplate.defaults.update({'menu_group': self.menu_group,
                                              'menu_item': self.menu_item})
 
