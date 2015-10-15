@@ -67,14 +67,14 @@ class MenuItem(object):
         """
         return i18n_url(self.route)
 
-    @class
+    @property
     def active_icon_class(self):
         """ Active class for the icon based on ``is_alt_icon_visible`` """
         if self.is_alt_icon_visible():
             return self.alt_icon_class
         return self.icon_class
 
-    @class
+    @property
     def active_icon_bitmap_path(self):
         """ Active path for the icon based on ``is_alt_icon_visible`` """
         if self.is_alt_icon_visible():
